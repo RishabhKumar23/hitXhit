@@ -93,7 +93,7 @@ const Ball = () => {
         }
     }
 
-    /******************************************** { for ball Animation } ***********************************************/
+    /******************************************** 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 { for ball Animation } ***********************************************/
     const ballAnimateedStyles = useAnimatedStyle(() => {
         return {
             top: targedPositionY.value,
