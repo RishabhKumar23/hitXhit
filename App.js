@@ -1,15 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Ball from './Components/Ball/Ball';
-import styles from './Components/Ball/Ball.styles';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+
 
 export default function App() {
   return (
     // importing components 
-    <View>
-      <Ball />  
+    <GestureHandlerRootView style={styles.container}>
+      <Ball />
       <StatusBar style='auto' />
-    </View>
+    </GestureHandlerRootView>
   );
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
