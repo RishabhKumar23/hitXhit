@@ -19,6 +19,25 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
     },
+    score: {
+        fontSize: 100,
+        fontWeight: "500",
+        position: "absolute",
+        top: 100,
+        color: "lightgrey",
+    },
+    gameOver: {
+        fontSize: 35,
+        fontWeight: "500",
+        color: "black",
+    },
+    gameOverContainer: {
+        position: "absolute",
+        top: 350,
+    },
+    support: {
+        fontSize: 15,
+    }
 });
 
 export default styles;
